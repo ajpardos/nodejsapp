@@ -14,7 +14,7 @@ job('Aplicacion Node.js Docker DSL') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('ajpardos/nodejsapp')
+            repositoryName('ajpardo/nodejsapp')
             tag('${GIT_REVISION,length=7}')
             registryCredentials('ajpardo')
             forcePull(false)
